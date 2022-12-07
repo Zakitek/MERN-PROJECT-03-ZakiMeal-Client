@@ -1,0 +1,43 @@
+.backDrop {
+    background-color: rgba(0, 0, 0, 0.54);
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 50;
+}
+
+.ModalBox {
+    position: fixed;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 600px;
+    min-height: 150px;
+    box-shadow: var(--dark-shadow);
+    border-radius: 10px;
+    background-color: white;
+    z-index: 5000;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modalBtns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

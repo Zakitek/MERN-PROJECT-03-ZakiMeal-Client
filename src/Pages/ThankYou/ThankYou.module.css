@@ -1,0 +1,23 @@
+.wrapper {
+    text-align: center;
+}
+
+.wrapper h2 {
+    font-size: 1.1rem;
+}
+
+.wrapper ul {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.wrapper ul li {
+    background-color: brown;
+    color: white;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.wrapper ul li:hover {
+    background-color: rgb(185, 76, 76);
+}

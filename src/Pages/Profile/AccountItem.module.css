@@ -1,0 +1,125 @@
+li {
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+li:hover {
+    background-color: rgb(200, 79, 79);
+}
+
+.edit_item {
+    margin-bottom: 20px;
+    color: rgb(21, 21, 21);
+    max-width: 450px;
+}
+
+.edit_item .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.edit_item .info span:first-of-type {
+    font-weight: 500;
+}
+
+.edit_item .info .edit_link {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.edit_item .info .edit_link:hover {
+    color: #ba7f10;
+}
+
+.edit_item .info .editInfo_wrapper {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edit_item .info span {
+    margin-left: 8px;
+}
+
+.edit_item .info a {
+    color: #ffffff;
+    margin-left: 8px;
+    font-style: italic;
+}
+
+.edit_item .info a:hover {
+    color: #ba7f10;
+}
+
+.edit_item .form_control {
+    display: flex;
+    border: 1px solid white;
+    width: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.edit_item .form_control input {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: rgb(180, 176, 176);
+}
+
+.edit_item .form_control input:focus {
+    outline: none;
+}
+
+.edit_item .form_control .btn_edit {
+    border-radius: 0px;
+    margin: 0;
+    padding: 10px;
+    width: 100px;
+}
+.edit_item .form_control .cancel {
+    border-radius: 0px;
+    margin: 0;
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(112, 60, 32);
+}
+
+
+
+
+@media (max-width: 480px) {
+    .hide {
+        display: none;
+        background-color: rgb(23, 87, 188);
+    }
+    .edit_item .info {
+        padding: 10px;
+    }
+
+    form {
+        padding: 0;
+    }
+}
+.inputName {
+    margin-right: 4px;
+}
+
+.key_value {
+    display: flex;
+}
+.error {
+    color: red;
+    background-color: white;
+    margin-top: 5px;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+}
+

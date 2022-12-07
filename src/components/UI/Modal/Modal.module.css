@@ -1,0 +1,98 @@
+.backDrop {
+    background-color: black;
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 50;
+}
+
+.ModalBox {
+    position: fixed;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 600px;
+    min-height: 150px;
+    box-shadow: var(--dark-shadow);
+    border-radius: 10px;
+    background-color: white;
+    z-index: 5000;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.itemsInsideCart {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(197, 196, 196);
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    min-height: 50px;
+}
+
+.itemName {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.itemPrice {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(214, 117, 37);
+}
+
+.numOfItemAdded {
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.removeItemIcon,
+.addItemIcon {
+    margin-left: 5px;
+    font-size: 1.3rem;
+    padding: 3px 15px;
+    background: transparent;
+    border: 1px solid rgb(199, 103, 56);
+    border-radius: 10px;
+    transition: 0.1s;
+    color: rgb(199, 103, 56);
+}
+
+.removeItemIcon:hover,
+.addItemIcon:hover {
+    color: white;
+    background-color: rgb(199, 103, 56);
+    cursor: pointer;
+}
+
+.theSum {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.modalBtns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

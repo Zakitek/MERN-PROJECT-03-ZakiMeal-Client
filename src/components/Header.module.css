@@ -1,0 +1,138 @@
+header {
+    height: 4rem;
+    width: 100%;
+    background-color: brown;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.header__container {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    height: 100%;
+    max-width: 1300px;
+    gap: 10px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+}
+
+.btn {
+    background-color: var(--main-color2);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.signup__Section:nth-child(4) .btn {
+    background-color: rgb(65, 23, 23);
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.btn:hover {
+    background-color: #b7410e;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.homeButton {
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+.homeButton:hover {
+    background: transparent;
+}
+
+.bar {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .signup__Section:nth-child(4) .btn {
+        border-radius: 0px;
+    }
+    nav {
+        background-color: rgb(101, 43, 31);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 100%;
+        right: 0;
+        height: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-radius: 10px;
+    }
+    nav.showBar {
+        height: auto;
+    }
+
+    nav > div {
+        width: 230px;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+    nav > div:hover {
+        background-color: brown;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        border-radius: 0%;
+        background-color: rgb(101, 43, 31);
+    }
+
+    .bar {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: -5px;
+        margin-left: 15px;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.3s;
+        padding: 0;
+    }
+    .bar:hover {
+        color: rgb(168, 168, 168);
+    }
+
+    .header__container {
+        grid-template-columns: 1fr auto auto;
+        position: relative;
+    }
+}
+
+.active {
+    color: yellow;
+}
+
+@media (max-width: 310px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+}

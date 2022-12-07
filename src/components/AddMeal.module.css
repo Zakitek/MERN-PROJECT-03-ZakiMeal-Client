@@ -1,0 +1,133 @@
+.addBtn {
+    display: block;
+    margin: 10px auto 40px auto;
+    padding: 10px 20px;
+    border-radius: 0;
+    position: relative;
+}
+
+.addBtn::before {
+    content: "";
+    width: 300px;
+    height: 4px;
+    position: absolute;
+    background-color: rgb(182, 61, 61);
+    bottom: -15px;
+    left: -38%;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.addBtn::after {
+    content: "";
+    width: 300px;
+    height: 4px;
+    position: absolute;
+    background-color: rgb(182, 61, 61);
+    top: -15px;
+    left: -38%;
+    border-radius: 50%;
+    cursor: default;
+}
+
+@media (max-width: 355px) {
+    .addBtn::before {
+        width: 150px;
+        left: 4%;
+    }
+
+    .addBtn::after {
+        width: 150px;
+        left: 4%;
+    }
+}
+
+.add_form {
+    display: block;
+    color: white;
+    position: relative;
+
+    background-color: #bd4037;
+    margin: 20px auto 40px auto;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 10px;
+}
+.add_form .form_control label {
+    width: 120px;
+}
+.add_form .form_control {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.add_form .form_control input {
+    padding: 5px;
+    border: 1px solid rgba(217, 217, 217, 0.818);
+}
+
+.add_form .form_control input:hover,
+.add_form .form_control input:active,
+.add_form .form_control input:focus {
+    outline: none;
+}
+
+.add_meal_btn,
+.cancel_btn {
+    background-color: white;
+    color: brown;
+    transition: 0.3s;
+}
+
+.add_meal_btn:hover,
+.cancel_btn:hover {
+    color: white;
+    background-color: brown;
+}
+
+.add_form::before {
+    content: "";
+    width:  100%;;
+    height: 4px;
+    position: absolute;
+    background-color: rgb(182, 61, 61);
+    bottom: -15px;
+    left: 0%;
+    border-radius: 50%;
+    cursor: default;
+}
+.add_form::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: rgb(182, 61, 61);
+    top: -15px;
+    left: 0%;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.error {
+    margin: 5px 0px;
+    color: rgb(230, 208, 13);
+    grid-column: span 2;
+}
+
+@media (max-width: 420px) {
+    .add_form .form_control {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .add_form {
+        padding: 20px;
+    }
+
+    .add_meal_btn,
+.cancel_btn {
+    font-size: 1rem;
+}
+}

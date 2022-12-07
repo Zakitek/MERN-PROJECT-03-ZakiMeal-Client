@@ -1,0 +1,197 @@
+/* Font awsome icons */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Start Variables */
+:root {
+    /* dark shades of primary color*/
+    --main-color: #a52a2a;
+    --main-color2: #631414;
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+    font-family: "Work Sans", sans-serif;
+    background-color: #222;
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+/* End Global Rules */
+
+/* .backIMG {
+    background-image: url("image.jpg");
+    height: 500px;
+    background-color: brown;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-bottom-right-radius: 100%;
+}
+
+ */
+
+/*  .card {
+    box-shadow: var(--dark-shadow);
+    border-radius: 8px;
+}
+
+.card-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: rgb(52, 52, 52);
+    width: 90vw;
+    max-width: 800px;
+    min-height: 200px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+
+}
+
+.card-intro h2 {
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.card-intro p {
+    line-height: 2rem;
+}
+
+ */
+/*  .card-items {
+    background-color: #fff;
+    width: 90vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px;
+}
+ */
+.item {
+    border-bottom: 1.2px solid rgb(182, 180, 180);
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.itemName {
+    font-weight: 600;
+}
+.itemDesc {
+    font-style: italic;
+}
+.itemPrice {
+    color: rgb(216, 131, 20);
+    font-weight: 600;
+}
+
+.inputAmount {
+    width: 40px;
+    height: 20px;
+}
+
+.amount {
+    margin-bottom: 5px;
+}
+/* form button {
+    color: white;
+    font-weight: 600;
+    background-color: rgb(175, 60, 60);
+    padding: 4px  10px;
+    border-radius: 10px;
+    border: none;
+    width: 80px;
+    transition: var(--transition);
+}
+
+form button:hover {
+    background-color: rgb(185, 109, 109);
+    cursor: pointer;
+} */
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px auto;
+    font-size: 2.7rem;
+    font-weight: 700;
+    position: relative;
+    background-image: linear-gradient(45deg, brown, rgb(188, 155, 155));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    bottom: 10px;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(130, 81, 81);
+}
+
+.MuiPaper-root-2496 {
+    background-color: #ff0022 !important;
+}
