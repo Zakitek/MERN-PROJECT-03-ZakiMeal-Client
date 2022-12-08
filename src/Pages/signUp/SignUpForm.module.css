@@ -46,10 +46,10 @@
     padding: 10px;
 }
 
-.signUpBtn:disabled,
-.signUpBtn:disabled:hover,
-.signUpBtn:disabled:active {
-    background-color: rgb(139, 39, 39);
+ .signUpBtn:disabled,
+ .signUpBtn:disabled:hover,
+ .signUpBtn:disabled:active {
+    background-color: rgb(189, 189, 189);
     color: #292929;
     border-color: #ccc;
     cursor: not-allowed;

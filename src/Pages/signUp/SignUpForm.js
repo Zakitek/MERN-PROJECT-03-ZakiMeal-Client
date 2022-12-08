@@ -127,7 +127,7 @@ function SignUpForm({ setFormHeight = () => {} }) {
                 const data = await response.json();
                 if (data) {
                     setIsLoaidng(false);
-                    login(data.token, data.expiresIn,data.user);
+                    login(data.token, data.expiresIn, data.user);
                     navigate("/profile");
                 } else {
                     throw new Error();
@@ -154,7 +154,12 @@ function SignUpForm({ setFormHeight = () => {} }) {
                     <div>Is loading ...</div>
                 </div>
                 <div className={classes.buttonsSection}>
-                    <button type="submit" disabled={!formIsValid} form="myform" className={classes.signUpBtn}>
+                    <button
+                        type="submit"
+                        disabled={!formIsValid}
+                        form="myform"
+                        className={classes.signUpBtn}
+                    >
                         Register
                     </button>
                 </div>
@@ -275,7 +280,12 @@ function SignUpForm({ setFormHeight = () => {} }) {
                 </form>
             </div>
             <div className={classes.buttonsSection}>
-                <button type="submit" disabled={!formIsValid} form="myform">
+                <button
+                    type="submit"
+                    disabled={!formIsValid}
+                    className={classes.signUpBtn}
+                    form="myform"
+                >
                     Register
                 </button>
             </div>
