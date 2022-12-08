@@ -1,5 +1,5 @@
 import classes from "./Checkout.module.css";
-import ListContext from "../../store/listContext"
+import ListContext from "../../store/listContext";
 import { useContext, useState } from "react";
 import MiniCard from "../../components/UI/Card/MiniCard";
 import DeliveryForm from "./DeliveryForm";
@@ -83,6 +83,7 @@ const Checkout = () => {
                 });
                 const data = await response.json();
                 navigate("/thankyou");
+                clearCart();
 
                 if (!response.ok) {
                     throw new Error(data);
@@ -92,7 +93,6 @@ const Checkout = () => {
             }
         }
         sendOrder();
-        clearCart();
     };
 
     const articles = itemsCart.map((item) => {
