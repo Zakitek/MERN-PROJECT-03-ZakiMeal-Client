@@ -26,7 +26,7 @@ function App() {
                 <div className="container">
                     <Routes location={location} key={location.pathname}>
                         <Route
-                            path="/menu"
+                            path=""
                             element={
                                 <>
                                     <Intro />
