@@ -97,15 +97,8 @@ function App() {
                                 }
                             />
                         )}
-                        <Route
-                            path="/"
-                            element={<Navigate to={"menu"} />}
-                            replace
-                        />
-                        <Route
-                            path="*"
-                            element={<Navigate to="menu" replace />}
-                        />
+
+                        <Route path="*" element={<Navigate to="" replace />} />
                     </Routes>
                 </div>
             </Layout>
