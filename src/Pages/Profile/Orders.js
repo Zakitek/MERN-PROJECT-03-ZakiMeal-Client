@@ -8,7 +8,7 @@ const Orders = () => {
 
     const [orders, setOrders] = useState([]);
     const [isLoading, setIsloading] = useState(false);
-    let url = "http://localhost:5000/orders/me";
+    let url = "https://zakimeal.onrender.com/orders/me";
 
     useEffect(() => {
         setIsloading(true);

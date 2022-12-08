@@ -54,7 +54,7 @@ export default function ItemInfo({ inputName }) {
         try {
             setIsloading(true);
             const response = await fetch(
-                "http://localhost:5000/users/profile",
+                "https://zakimeal.onrender.com/users/profile",
                 {
                     method: "PATCH",
                     body: JSON.stringify(data),

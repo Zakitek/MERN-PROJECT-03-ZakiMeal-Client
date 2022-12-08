@@ -51,9 +51,9 @@ const Checkout = () => {
                 orders: deliveryHandler.orderDetails.order,
                 total: deliveryHandler.orderDetails.total,
             });
-            url = "http://localhost:5000/orders/anonym-order";
+            url = "https://zakimeal.onrender.com/orders/anonym-order";
         } else {
-            url = "http://localhost:5000/orders/owner-order";
+            url = "https://zakimeal.onrender.com/orders/owner-order";
             orderInfo = JSON.stringify({
                 fullname: userInfo.fullname,
                 email: userInfo.email,

@@ -1,4 +1,4 @@
-const SERVER_DOMAIN = "http://localhost:5000";
+const SERVER_DOMAIN = "https://zakimeal.onrender.com";
 
 export async function getAllMeals() {
     const response = await fetch(`${SERVER_DOMAIN}/meals`);

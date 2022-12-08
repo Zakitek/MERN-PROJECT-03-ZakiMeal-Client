@@ -107,7 +107,7 @@ function SignUpForm({ setFormHeight = () => {} }) {
             phone: enteredPhone,
         };
 
-        let url = "http://localhost:5000/users/signup";
+        let url = "https://zakimeal.onrender.com/users/signup";
 
         const sendData = async () => {
             try {

@@ -64,7 +64,7 @@ function LoginForm({ setLoginHandler }) {
         setEmailIsTouched(false);
         setPasswordIsTouched(false);
 
-        let url = "http://localhost:5000/users/login";
+        let url = "https://zakimeal.onrender.com/users/login";
         const sendData = async () => {
             try {
                 setIsLoading(true);
